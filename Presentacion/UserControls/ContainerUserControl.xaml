@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Presentacion.UserControls.ContainerUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Presentacion.UserControls"
+             xmlns:ribbon="clr-name"
+             >
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"  ></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        
+        <local:RibbonUserControl></local:RibbonUserControl>
+        
+        <local:ControlesUserControl Grid.Row="1"></local:ControlesUserControl>
+        
+    </Grid>
+</UserControl>

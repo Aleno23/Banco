@@ -1,0 +1,50 @@
+﻿<Window x:Class="Presentacion.Vistas.Transacciones.Saldo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentacion.Vistas.Transacciones"
+        mc:Ignorable="d"
+        Title="Saldo" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowState="Maximized" Background="AntiqueWhite">
+    <Grid Background="BurlyWood" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="250">
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"  />
+            <ColumnDefinition Width="Auto" />
+            
+
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" Content="Saldo" FontSize="30" />
+
+        <Label Grid.Column="0" Grid.Row="1" Content="Número Cuenta:" FontSize="20" />
+        <Label Grid.Column="0" Grid.Row="2" Content="Cédula Titular:" FontSize="20" />
+        <Label Grid.Column="0" Grid.Row="3" Content="Saldo:" FontSize="20" />
+
+        <TextBox  Grid.Column="1" Grid.Row="1" Name="txtNumeroS" Text="{Binding Cuenta.Numero}" Width="200" Height="30" FontSize="20"/>
+        <TextBox  Grid.Column="1" Grid.Row="2" Name="txtCedulaS" Text="{Binding Cuenta.Cedula}" Width="200" Height="30" FontSize="20"/>
+        <TextBox  Grid.Column="1" Grid.Row="3" Name="txtSaldoS" Text="{Binding Cuenta.Saldo}" Width="200" Height="30" FontSize="20"/>
+
+        <Button Name="BtnSaldo" Grid.Column="0" Grid.Row="4" 
+                Content=" Ver Saldo"  Width="92" Height="55" FontSize="20"
+                Background="AntiqueWhite"
+                Command="{Binding VerSaldoCommand}"/>
+
+        <Button Name="BtnCacelarSaldo" Grid.Column="1" Grid.Row="4" 
+                Content="Cancelar"  Width="100" Height="55" FontSize="20"
+                Background="AntiqueWhite"
+                Command="{Binding CancelarCommand}"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Application x:Class="Presentacion.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Presentacion"
+            StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="2"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="MaxLength" Value="50"></Setter>
+        </Style>
+        <Style TargetType="Label" >
+            <Setter Property="Margin" Value="2"></Setter>
+            <Setter Property="FontSize" Value="12"></Setter>
+            <Setter Property="FontWeight" Value="SemiBold"></Setter>
+        </Style>
+        <Style TargetType="Button" >
+            <Setter Property="Margin" Value="2,5,2,5"></Setter>
+            <Setter Property="FontSize" Value="12"></Setter>
+            <Setter Property="MinWidth" Value="150"></Setter>
+            <Setter Property="MinHeight" Value="25"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>
